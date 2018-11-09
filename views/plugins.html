@@ -1,0 +1,80 @@
+{% extends "base.html" %}
+{% import "components/forms.html" as forms %}
+
+{% block content %}
+<section class="Section PageTitle PageTitle--integrations PageTitle--has-background">
+  <div class="Section__content">
+    <h1 class="PageTitle__header">
+      Plugins
+    </h1>
+    <div class="PageTitle__background"></div>
+  </div>
+</section>
+
+<section class="ContactDetails">
+  <div class="ContactDetails__color-border--1"></div>
+  <div class="ContactDetails__color-border--2"></div>
+  <div class="ContactDetails__color-border--3"></div>
+  <div class="ContactDetails__color-block"></div>
+
+  <div class="SubsectionColumn SubsectionColumn--left">
+    <div class="Subsection Subsection--aqua Subsection--with-multiple-icons">
+      <div class="Subsection__color-block"></div>
+      <div class="Subsection__content">
+        <h4 class="Subsection__header">
+          Plugins in Manuscript
+        </h4>
+        <div class="Subsection__body">
+          <p>Plugins have been deprecated in Manuscript. Instead, check out our <a href="/integrations">integrations</a>!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="Subsection Subsection--green">
+      <div class="Subsection__color-block"></div>
+      <div class="Subsection__content">
+
+      </div>
+    </div>
+
+
+  </div>
+
+  <div class="SubsectionColumn SubsectionColumn--right">
+    <div class="Subsection Subsection--red">
+      <div class="Subsection__color-block"></div>
+      <div class="Subsection__content">
+        <h4 class="Subsection__header">
+          Plugins in FogBugz For Your Server
+        </h4>
+        <div class="Subsection__body">
+          <p>Please contact us via <a href="mailto:customer-service@fogcreek.com">email</a>.</p>
+        </div>
+      </div>
+    </div>
+       
+    <div class="Subsection Subsection--purple">
+      <div class="Subsection__color-block"></div>
+      <div class="Subsection__content">
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="Section GetStartedBottom GetStartedBottom--enterprise">
+  <div class="GetStartedBottom__color-block"></div>
+  <div class="Section__content">
+    <div class="GetStartedBottom__copy">
+      <h4 class="GetStartedBottom__header">
+          Learn how Manuscript works:
+      </h4>
+      <p class="GetStartedBottom__subheader">
+        The first 14 days are on us. No credit card required.
+      </p>
+    </div>
+    {{ forms.GetStartedForm(location='bottom', showPrivacy=true, inputColor='aqua', buttonColor='blue') }}
+  </div>
+</section>
+
+{% endblock content %}

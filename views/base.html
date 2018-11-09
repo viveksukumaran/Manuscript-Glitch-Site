@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="//cloud.typenetwork.com/projects/1924/fontface.css/" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/styles1a.css">
+    
+    <title>{{ title }}</title>
+    <meta name="description" content="{{ description }}">
+    <link id="favicon" rel="icon" href="https://cdn.glitch.com/f7cc2604-c47d-48c7-ac8e-297e1e01f511%2Ffavicon.ico?1540577653412" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement( "picture" );
+    </script>
+    <script src="/vendor/picturefill.min.js" async></script>
+    
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WG3LXMP');</script>
+<!-- End Google Tag Manager -->
+  </head>
+  <body data-page="{{ pageSlug }}" data-short-page="{{ shortPage }}">
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WG3LXMP"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper">
+      {% block SiteHeader %}
+      <header class="Section SiteHeader">
+        <div class="SiteHeader__color-block"></div>
+        <div class="SiteHeader__color-border--1"></div>
+        <div class="SiteHeader__color-border--2"></div>
+        <div class="SiteHeader__color-border--3"></div>
+        <div class="Section__content">
+          <nav class="SiteNav" data-menu-visible="false">
+            <div class="SiteNav__button">
+              <div class="SiteNav__button-hamburger"></div>
+              <div class="SiteNav__button-text">Menu</div>
+            </div>
+            <div class="SiteNav__content">
+              <a href="/" class="SiteNav__item SiteNav__item--SiteLogo SiteLogo">
+                <picture class="SiteLogo__picture">
+                  <source srcset="https://cdn.glitch.com/f7cc2604-c47d-48c7-ac8e-297e1e01f511%2Ffogbugz-logo_transparent2.png?1540417493942" media="(min-width: 840px)" class="SiteLogo__source" />
+                  <img src="https://cdn.glitch.com/f7cc2604-c47d-48c7-ac8e-297e1e01f511%2Ffogbugz-logo_transparent2.png?1540417493942" class="SiteLogo__source" alt="Manuscript" />
+                </picture>
+              </a>
+              <div class="SiteNav__links">
+                <a class="SiteNav__item SiteNav__item--link" href="/how-it-works">How it works</a>
+                <a class="SiteNav__item SiteNav__item--link" href="/pricing">Pricing</a>
+                <a class="SiteNav__item SiteNav__item--link" href="/enterprise">Enterprise</a>
+                <a class="SiteNav__item Button Button--nav try try_fogbugz" href="/try">Try FogBugz</a>                
+                <a class="SiteNav__item SiteNav__item--link" href="/login">Log In</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </header>
+      {% endblock SiteHeader %}
+
+      <main>
+        {% block content %}{% endblock %}
+
+        {% block SiteFooter %}
+        <footer class="Section Footer">
+          <div class="Footer__color-block"></div>
+          <div class="Footer__color-border--1"></div>
+          <div class="Footer__color-border--2"></div>
+          <div class="Footer__color-border--3"></div>
+          <div class="Section__content">
+            <div class="Footer__items">
+              <div class="SiteLogo">
+                <img src="https://cdn.glitch.com/f7cc2604-c47d-48c7-ac8e-297e1e01f511%2Ffogbugz-logo_transparent2.png?1540417493942" alt="FogBugz Logo" class="SiteLogo__image" />
+              </div>
+              {% include "components/SocialIcons.html" %}
+
+              <div class="FooterCopy FooterCopy--Links">
+                <br />
+                <a href="/" class="FooterCopy__item FooterCopy__item--header">
+                  Manuscript / FogBugz
+                </a>
+                <a href="https://support.fogbugz.com" class="FooterCopy__item">Support</a>
+                <a href="/features/task-management" class="FooterCopy__item">Feature Tour</a>
+                <a href="/integrations" class="FooterCopy__item">Integrations</a>                   
+                <a href="/pricing" class="FooterCopy__item">Pricing</a>
+                <a href="/enterprise" class="FooterCopy__item">Enterprise</a>
+                <a href="/legal" class="FooterCopy__item">Legal</a>
+                <a href="/privacy" class="FooterCopy__item">Privacy Policy</a>
+                <a href="http://status.fogbugz.com" class="FooterCopy__item">System Status</a>
+                <a href="https://api.manuscript.com" class="FooterCopy__item">API</a>                
+              </div>
+              <div class="FooterCopy FooterCopy--Contact">
+                <a href="mailto:success@fogbugz.com" target="_blank" class="FooterCopy__item FooterCopy__item--header">
+                  Contact Manuscript / FogBugz
+                </a>
+                <a href="mailto:success@fogbugz.com" class="FooterCopy__item">success@fogbugz.com</a>
+                <p class="FooterCopy__item">401, Congress Avenue Suite 2650, Austin, Texas</p>
+                <p class="FooterCopy__item">&copy; 2000-2018 Manuscript</p>
+              </div>
+            </div>
+          </div>
+        </footer>
+        {% endblock %}
+      </main>
+    </div>
+
+
+  
+    <script src="/client.js"></script>
+    {% block page_scripts %}{% endblock %}
+  </body>
+</html>
